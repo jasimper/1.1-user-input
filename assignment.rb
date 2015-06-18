@@ -2,9 +2,9 @@ name = ""
 	until name.length >= 1
 		puts "Please enter your name."
 		name = gets.chomp
-end
+	end
 
-		puts %{
+	puts %{
 What is your ideal legal status?
 Please answer by entering the cooresponding number.
 	1. I am law abiding!
@@ -19,8 +19,7 @@ legal = 0
 		legal = gets.chomp.to_i
 	end
 
-	if
-	  legal == 1
+	if legal == 1
 		puts "The Empire thanks you for your aquiescence, citizen #{name}."
 	elsif legal == 2
 		puts "#{name}, aren't you a little short for a Storm Trooper?"
