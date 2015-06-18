@@ -1,15 +1,16 @@
 name = ""
 	until name.length >= 1
 		puts "Please enter your name."
-	name = gets.chomp
+		name = gets.chomp
 end
 
-	puts %{What is your ideal legal status?
+		puts %{
+What is your ideal legal status?
 Please answer by entering the cooresponding number.
-1. I am law abiding!
-2. I make sure others obey the law.
-3. I live outside the law.
-4. Questionable.
+	1. I am law abiding!
+	2. I make sure others obey the law.
+	3. I live outside the law.
+	4. Questionable.
 }
 
 legal = 0
@@ -20,11 +21,11 @@ legal = 0
 
 	if
 	  legal == 1
-	puts "The Empire thanks you for your aquiescence, citizen #{name}."
-elsif legal == 2
-	puts "#{name}, aren't you a little short for a Storm Trooper?"
-elsif legal == 3
-	puts "Hey, #{name}! Who's scruffy-lookin'?"
-elsif legal == 4
-	puts "#{name}, I loathe bounty hunters. We don't need their scum..."
-end
+		puts "The Empire thanks you for your aquiescence, citizen #{name}."
+	elsif legal == 2
+		puts "#{name}, aren't you a little short for a Storm Trooper?"
+	elsif legal == 3
+		puts "Hey, #{name}! Who's scruffy-lookin'?"
+	elsif legal == 4
+		puts "#{name}, I loathe bounty hunters. We don't need their scum..."
+	end
